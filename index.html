@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buku Galau by Haidar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <img src="images/logo.jpg" alt="Logo Haidar" class="logo">
+
+        <h1>Buku Galau by Haidar</h1>
+
+        <div id="kataGalau" class="kata-galau">
+            Klik tombol di bawah untuk membaca kata galau...
+        </div>
+
+        <button onclick="tampilkanKataGalau()">Tampilkan Kata Galau</button>
+
+        <footer>
+            <p>© 2025 Haidar | Semua rasa ditumpahkan di sini.</p>
+        </footer>
+    </div>
+
+    <script>
+        const kataGalau = [
+            "Cintaku tulus, tapi dia anggap lucu.",
+            "Aku bukan dia, yang bisa buatmu bahagia.",
+            "Tersenyum, tapi hati remuk.",
+            "Aku lelah pura-pura kuat.",
+            "Rindu ini tak tahu harus ke mana.",
+            "Kita pernah sedekat nadi, tapi kini sejauh langit dan bumi.",
+            "Kenangan itu menyakitkan, tapi tak bisa kulupakan.",
+            "Kamu bahagia, aku berpura-pura bahagia.",
+            "Janji tinggal janji, aku tinggal sendiri.",
+            "Mengikhlaskanmu adalah luka yang kupeluk setiap malam.",
+            "Kalau aku pergi, kamu tetap tenang, kan?",
+            "Aku mencintaimu, tapi tak cukup untuk membuatmu tinggal.",
+            "Kadang diam lebih menyakitkan daripada kata perpisahan.",
+            "Kenapa rasa sayang nggak bisa bikin kamu bertahan?",
+            "Maaf, aku bukan rumah yang nyaman buatmu.",
+            "Kita punya cerita, tapi takdir berkata lain.",
+            "Bahagia itu sederhana, tapi tidak untukku.",
+            "Mencintai diam-diam itu melelahkan.",
+            "Sakitnya bukan karena ditinggalkan, tapi dilupakan.",
+            "Kamu datang saat aku siap, dan pergi saat aku butuh.",
+            "Malam jadi saksi air mataku.",
+            "Sunyi ini terlalu jujur tentang kehilanganmu.",
+            "Aku takut malam, karena di sanalah semua kenangan menyerang.",
+            "Rindu ini berisik di kepala.",
+            "Tidur bukan solusi, karena kamu ada di mimpi.",
+            "Aku masih menunggumu, meski kamu tak pernah tahu.",
+            "Seandainya kamu tahu, aku tak benar-benar baik-baik saja.",
+            "Katamu sayang, tapi ke aku tak lagi datang.",
+            "Kamu berubah, tapi aku tetap mencintaimu.",
+            "Aku kehilangan seseorang yang bahkan belum sepenuhnya jadi milikku."
+        ];
+
+        function tampilkanKataGalau() {
+            const random = kataGalau[Math.floor(Math.random() * kataGalau.length)];
+            document.getElementById("kataGalau").innerText = random;
+        }
+    </script>
+</body>
+</html>
